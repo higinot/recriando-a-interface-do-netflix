@@ -1,0 +1,102 @@
+:root{
+    --vermelho:#E50619;
+    --preta: #141414;
+    --texto-padrao: 20px
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Máximo dos elementos será a borda da caixa */
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+header nav a:hover {
+    color: #fff
+}
+
+.filme-principal {
+    font-size: var(--texto-padrao);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABasPZEF5Uclj0X6vqcBDlpOKVG64P6FnxSWi-goS9Y-r9Y3fULoRYBksf3HJdnfTGxHJX_tCNA_0TlcmwXS1TGg6TWgfdns8pjB2wiiN9-WOipEY.jpg?r=ec1);
+
+    background-size: cover;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .titulo{
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 100px;
+    margin-left: 20px;
+    width: 70%;
+}
+
+.botoes button{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+
+    padding: 15px 30px;
+    margin-left: 20px;
+
+    cursor:pointer;
+    transition: .5s ease all;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botoes button:hover{
+    background-color: white;
+    color: #141414;
+    font-size: 20px;
+}
+
+.botoes button i{
+    margin-right: 5px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+    cursor:pointer
+}
+
